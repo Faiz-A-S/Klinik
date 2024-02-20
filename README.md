@@ -1,1 +1,1 @@
-Ga ada build, inc, libs
+Ga ada build, plugins, libs
