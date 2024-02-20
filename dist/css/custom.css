@@ -1,0 +1,268 @@
+.truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    font-size: smaller;
+    color: #000000cf;
+    font-style: italic;
+}
+
+.truncate-1 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    color: #000000cf;
+}
+
+.modal-dialog.large {
+    width: 80% !important;
+    max-width: unset;
+}
+
+.modal-dialog.mid-large {
+    width: 50% !important;
+    max-width: unset;
+}
+
+@media (max-width:720px) {
+    .modal-dialog.large {
+        width: 100% !important;
+        max-width: unset;
+    }
+    .modal-dialog.mid-large {
+        width: 100% !important;
+        max-width: unset;
+    }
+	.schedule-table {
+		padding-right: 10px;
+    }
+}
+
+#viewer_modal .btn-close {
+    position: absolute;
+    z-index: 999999;
+    /*right: -4.5em;*/
+    background: unset;
+    color: white;
+    border: unset;
+    font-size: 27px;
+    top: 0;
+}
+
+#viewer_modal .modal-dialog {
+    width: 80%;
+    max-width: unset;
+    height: calc(90%);
+    max-height: unset;
+}
+
+#viewer_modal .modal-content {
+    background: black;
+    border: unset;
+    height: calc(100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#viewer_modal img,
+#viewer_modal video {
+    max-height: calc(100%);
+    max-width: calc(100%);
+}
+
+.service-img-view {
+    object-fit: scale-down;
+    object-position: top center;
+    width: 100%;
+    max-height: 30vh !important;
+}
+
+.client-logo-modal {
+    object-fit: scale-down;
+    object-position: top center;
+    width: 100%;
+    max-height: 28vh !important;
+    background: #000000d1;
+}
+
+#testimonials {
+    position: relative !important;
+}
+
+#testimonials .filter-div {
+    position: absolute !important;
+    height: calc(100%);
+    width: calc(100%);
+    background-color: #00000029 !important;
+}
+
+#testimonials blockquote p {
+    font-size: inherit;
+    color: white !important;
+    line-height: inherit;
+}
+
+#testimonials blockquote {
+    margin: 0 0px 30px 4px !important;
+}
+
+.testimonials-avatar {
+    object-fit: scale-down;
+    object-position: center center;
+    border-radius: 50%;
+    border: 3px solid rgba(255, 255, 255, 0.753);
+    height: 11rem;
+    width: 11rem;
+    margin-right: 15px
+}
+
+#testimonials blockquote cite {
+    font-size: 23px !important;
+}
+
+
+header .banner-text {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -36%;
+}
+
+header .banner-text h3 {
+    color: #fdfafa;
+    text-shadow: 4px 3px 4px rgb(0 0 0 / 50%);
+    background: #02955300;
+}
+
+nav#nav-wrap {
+    background:#00000070;
+}
+
+nav#nav-wrap.opaque {
+    background: #333;
+}
+
+.portfolio-item {
+		width:100%;
+        display: flex;
+        margin-bottom: 20px;
+        margin-right: auto; /* Add margin to create space between items */
+		margin-left: auto; /* Add margin to create space between items */
+		flex-direction: column;
+    }
+
+    .doctor-info {
+        display: flex;
+        align-items: center;
+    }
+
+.doctor-pic {
+    object-fit: contain; /* or use 'contain' based on your preference */
+    object-position: center; /* or adjust as needed */
+	max-width:115px;
+    margin-right: 20px; /* Adjust the margin as needed */
+	margin-bottom: 20px; /* Adjust the margin as needed */
+	padding-left:20px;
+}
+	.doctor-pic img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* This ensures that the image doesn't have extra spacing below it */
+}
+
+    .schedule-table {
+        width: 100%; /* Adjust the width as needed */
+		padding-right: 10px;
+		margin-bottom: 20px;
+		
+    }
+
+    .schedule-table table {
+		width: auto;
+        border-collapse: collapse;
+    }
+
+    .schedule-table th,
+    .schedule-table td {
+        padding: 3px;
+        text-align: center;
+		min-width: 185px;
+		border-radius: 8px;
+		color: #000000;
+    }
+
+    .schedule-table th {
+		color: #000000;
+        background-color: #d0e4db;
+    }
+	
+	.schedule-table-container {
+    overflow-x: auto;
+}
+
+      .gallery {
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: row;
+			margin: auto;
+        }
+
+        .gallery-item {
+            position: relative;
+			height:20%;
+            width: 31.5%;
+            margin: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-item img {
+            width: 100%;
+			object-fit: cover;
+            border-radius: 8px;
+			max-height:150px;
+        }
+
+        .gallery-item-text {
+         position: absolute;
+         transform: translate(0%, -100%);
+         padding: 10px;
+         background-color: rgba(208,228,219,0.6);
+         border-radius: 8px;
+         width: 100%; /* Make the text box width 100% */
+         height: 100%; /* Make the text box height 100% */
+		 overflow: hidden;
+      }
+      .gallery-item-text-desc{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         height: 100%;
+		 text-align: center;
+      }
+
+        @media (max-width: 768px) {
+            .gallery-item {
+                width: 100%;
+            }
+			
+        }
+		
+		   @media (max-width: 1130px) {
+             .gallery {
+				 justify-content: center;
+				}
+		   }
+			
